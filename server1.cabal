@@ -48,6 +48,9 @@ library
       StandaloneDeriving
       GeneralizedNewtypeDeriving
       DeriveAnyClass
+      DerivingVia
+      MultiParamTypeClasses
+      FlexibleInstances
       NumericUnderscores
       OverloadedStrings
       ScopedTypeVariables
@@ -64,6 +67,7 @@ library
     , pretty-simple
     , rapid
     , servant
+    , servant-errors
     , servant-server
     , universum
     , unliftio
@@ -94,6 +98,9 @@ executable server1-exe
       StandaloneDeriving
       GeneralizedNewtypeDeriving
       DeriveAnyClass
+      DerivingVia
+      MultiParamTypeClasses
+      FlexibleInstances
       NumericUnderscores
       OverloadedStrings
       ScopedTypeVariables
@@ -111,6 +118,7 @@ executable server1-exe
     , pretty-simple
     , rapid
     , servant
+    , servant-errors
     , servant-server
     , server1
     , universum
@@ -143,6 +151,9 @@ test-suite server1-test
       StandaloneDeriving
       GeneralizedNewtypeDeriving
       DeriveAnyClass
+      DerivingVia
+      MultiParamTypeClasses
+      FlexibleInstances
       NumericUnderscores
       OverloadedStrings
       ScopedTypeVariables
@@ -160,6 +171,7 @@ test-suite server1-test
     , pretty-simple
     , rapid
     , servant
+    , servant-errors
     , servant-server
     , server1
     , universum

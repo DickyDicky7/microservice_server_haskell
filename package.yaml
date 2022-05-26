@@ -62,12 +62,12 @@ default-extensions:
   - GeneralizedNewtypeDeriving
   - DeriveAnyClass
   # - DerivingStrategies
-  # - DerivingVia
+  - DerivingVia
   # - ViewPatterns
   # - PatternSynonyms
-  # - MultiParamTypeClasses
+  - MultiParamTypeClasses
   # - TypeSynonymInstances
-  # - FlexibleInstances
+  - FlexibleInstances
   - NumericUnderscores
   - OverloadedStrings
   # - FlexibleContexts
@@ -97,6 +97,7 @@ dependencies:
   - chronos-bench
   - servant
   - servant-server
+  - servant-errors
   - warp
   - wai-logger
   - universum
