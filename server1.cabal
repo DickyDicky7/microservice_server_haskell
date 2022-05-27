@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       DevelMain
+      PostgreSQL
       Server
   other-modules:
       Paths_server1
@@ -39,6 +40,8 @@ library
       MultiWayIf
       BlockArguments
       TypeOperators
+      GADTs
+      TypeFamilies
       DataKinds
       TypeApplications
       DisambiguateRecordFields
@@ -50,9 +53,11 @@ library
       DeriveAnyClass
       DerivingVia
       MultiParamTypeClasses
+      TypeSynonymInstances
       FlexibleInstances
       NumericUnderscores
       OverloadedStrings
+      FlexibleContexts
       ScopedTypeVariables
       StrictData
       Strict
@@ -63,7 +68,12 @@ library
       aeson
     , async
     , base >=4.7 && <5
+    , beam-core
+    , beam-migrate
+    , beam-postgres
     , chronos-bench
+    , dotenv
+    , postgresql-simple
     , pretty-simple
     , rapid
     , servant
@@ -89,6 +99,8 @@ executable server1-exe
       MultiWayIf
       BlockArguments
       TypeOperators
+      GADTs
+      TypeFamilies
       DataKinds
       TypeApplications
       DisambiguateRecordFields
@@ -100,9 +112,11 @@ executable server1-exe
       DeriveAnyClass
       DerivingVia
       MultiParamTypeClasses
+      TypeSynonymInstances
       FlexibleInstances
       NumericUnderscores
       OverloadedStrings
+      FlexibleContexts
       ScopedTypeVariables
       StrictData
       Strict
@@ -114,7 +128,12 @@ executable server1-exe
       aeson
     , async
     , base >=4.7 && <5
+    , beam-core
+    , beam-migrate
+    , beam-postgres
     , chronos-bench
+    , dotenv
+    , postgresql-simple
     , pretty-simple
     , rapid
     , servant
@@ -142,6 +161,8 @@ test-suite server1-test
       MultiWayIf
       BlockArguments
       TypeOperators
+      GADTs
+      TypeFamilies
       DataKinds
       TypeApplications
       DisambiguateRecordFields
@@ -153,9 +174,11 @@ test-suite server1-test
       DeriveAnyClass
       DerivingVia
       MultiParamTypeClasses
+      TypeSynonymInstances
       FlexibleInstances
       NumericUnderscores
       OverloadedStrings
+      FlexibleContexts
       ScopedTypeVariables
       StrictData
       Strict
@@ -167,7 +190,12 @@ test-suite server1-test
       aeson
     , async
     , base >=4.7 && <5
+    , beam-core
+    , beam-migrate
+    , beam-postgres
     , chronos-bench
+    , dotenv
+    , postgresql-simple
     , pretty-simple
     , rapid
     , servant

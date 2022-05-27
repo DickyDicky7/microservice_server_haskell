@@ -36,8 +36,8 @@ default-extensions:
   # - LiberalTypeSynonyms
   # - ExistentialQuantification
   # - GADTSyntax
-  # - GADTs
-  # - TypeFamilies
+  - GADTs
+  - TypeFamilies
   # - TypeFamilyDependencies
   - DataKinds
   # - TypeInType
@@ -66,11 +66,11 @@ default-extensions:
   # - ViewPatterns
   # - PatternSynonyms
   - MultiParamTypeClasses
-  # - TypeSynonymInstances
+  - TypeSynonymInstances
   - FlexibleInstances
   - NumericUnderscores
   - OverloadedStrings
-  # - FlexibleContexts
+  - FlexibleContexts
   # - ConstraintKinds
   # - ExplicitForAll
   # - KindSignatures
@@ -102,6 +102,11 @@ dependencies:
   - wai-logger
   - universum
   - unliftio
+  - beam-core
+  - beam-postgres
+  - beam-migrate
+  - postgresql-simple
+  - dotenv
 
 library:
   source-dirs: src

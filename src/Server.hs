@@ -4,7 +4,6 @@ module Server
 
 import qualified Control.Concurrent.Async      as Async
 import qualified Data.Aeson                    as JSON
-import qualified Data.Typeable                 as Typeable
 import qualified Network.Wai.Handler.Warp      as HTTP
 import qualified Network.Wai.Logger            as HTTP
 import qualified Network.Wai.Middleware.Servant.Errors
@@ -41,7 +40,7 @@ type API_1 = "api1" :> Post '[JSON] (Response ())
 server_1 :: Server API_1
 server_1 =
     do
-        -- throwM OhShit
+        throwM OhShit
         throwError err418 { errBody = "This is err 300", errHeaders = [("hihi", "haha")] }
         pure (Response 200 "API_1 was requested" Nothing)
     `catch` onError
